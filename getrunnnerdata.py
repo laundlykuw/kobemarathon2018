@@ -7,16 +7,9 @@ import time
 
 rank = pd.DataFrame()
 
-# race_id = 183373    #RUNNETで管理されている神戸マラソンのID
-# runner_id = 15
-# raceId=race_id
-# official= "on"
-# cssId=race_id
-
-
 for i in range(12, runner_id): #取得対象となるIDを参加者に配布されたカタログから確認して取得範囲を決めます
     try:
-        url = "https://runnet.jp/record/parts/userResultRaceResultShowAction.do?raceId={}&numberCard={}&official={}&cssId={}".format(str(raceId), str(i),official,str(cssId))
+        url = "省略"
 
         dfs = pd.io.html.read_html(url)
         dfs[1].columns = ["key", "split", "rap"]
